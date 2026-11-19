@@ -28,6 +28,7 @@ section{padding:70px 0}
 h2{font:700 34px/1.2 Georgia,serif;margin:0 0 10px}
 .sub{color:var(--muted);margin:0 0 34px;max-width:640px}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.news{display:grid;gap:14px;max-width:760px}.news h3{margin:0 0 6px}.when{font-size:14px;font-weight:600;opacity:.6;margin-left:8px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:24px}
 .card .i{font-size:30px}.card h3{margin:8px 0 6px;font-size:19px}.card p{margin:0;color:var(--muted);font-size:15.5px}
 .shots{display:flex;gap:18px;overflow-x:auto;padding-bottom:12px;scroll-snap-type:x mandatory}
@@ -60,7 +61,7 @@ def page(title, desc, body, depth=0):
 <link rel="icon" href="{up}favicon.png">
 <style>{CSS}</style></head><body>
 <header class="nav"><div class="wrap"><a class="brand" href="{up or './'}"><img src="{up}img/icon.png" alt="">Ninth Hour</a>
-<nav><a class="link" href="{up}#features">Features</a><a class="link" href="{up}#premium">Premium</a><a class="link" href="mailto:sales@honestysales.com">Contact</a></nav></div></header>
+<nav><a class="link" href="{up}#features">Features</a><a class="link" href="{up}#new">What&rsquo;s new</a><a class="link" href="{up}#premium">Premium</a><a class="link" href="mailto:sales@honestysales.com">Contact</a></nav></div></header>
 {body}
 <footer><div class="wrap"><a href="{up}privacy/">Privacy</a><a href="{up}terms/">Terms</a><a href="mailto:sales@honestysales.com">sales@honestysales.com</a>
 <p>&copy; 2026 Honesty Sales Ltd &middot; Company no. 15075596 &middot; PA103 Technology Centre, Glaisher Drive, Wolverhampton WV10 9RU, UK</p></div></footer>
@@ -74,6 +75,16 @@ FEATURES = [
     ('🪔', 'Keep your lamp burning', 'Your streak, milestones and a calendar of every day you prayed and read.'),
     ('✍️', 'Reflect', 'A daily question and a private journal kept only on your phone.'),
     ('🌅', 'Follows the sun', 'Prayer times move with sunrise and sunset where you live.'),
+    ('🔊', 'Listen to the Word', 'Hear each chapter and today&rsquo;s word read aloud, slower or faster, with the verse lit up as it is read.'),
+    ('🖍️', 'Colour and share verses', 'Tap verses to colour them, copy them, or share them as text or a beautiful picture.'),
+    ('📱', 'Any screen', 'Works upright or sideways, on phones and tablets.'),
+]
+
+# Newest first. Add a line here with every app update.
+RELEASES = [
+    ('0.7.4', 'November 2026', 'Tap verses to colour them in five colours, copy them, or share them as text or a picture. The app now turns sideways and works on tablets.'),
+    ('0.7.2', 'November 2026', 'Listen to Bible chapters and today&rsquo;s word read aloud, with slower and faster speeds. Calls to prayer now play their sound.'),
+    ('0.6.0', 'November 2026', 'Ninth Hour arrives on Google Play.'),
 ]
 
 HOURS = [('Before the day', 'Mark 1:35'), ('Morning sacrifice', 'Lamentations 3:22–23'), ('The third hour', 'Acts 2:15'),
@@ -93,6 +104,12 @@ home = f"""
 <h2>Built to keep you praying</h2>
 <p class="sub">Everything in Ninth Hour has one aim: to help you pray without ceasing and stay in the Word.</p>
 <div class="grid">{''.join(f'<div class="card"><div class="i">{i}</div><h3>{t}</h3><p>{d}</p></div>' for i, t, d in FEATURES)}</div>
+</div></section>
+
+<section id="new"><div class="wrap">
+<h2>What&rsquo;s new</h2>
+<p class="sub">Ninth Hour keeps growing. Update the app from Google Play to get the latest.</p>
+<div class="news">{''.join(f'<div class="card"><h3>Version {v} <span class="when">{d}</span></h3><p>{t}</p></div>' for v, d, t in RELEASES)}</div>
 </div></section>
 
 <section><div class="wrap"><div class="shots">

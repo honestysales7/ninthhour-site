@@ -69,7 +69,7 @@ def page(title, desc, body, depth=0):
 
 
 FEATURES = [
-    ('🔔', 'Calls to prayer', 'Gentle calls at the ancient hours, from dawn to night, with natural sounds like bells and cockcrow.'),
+    ('🔔', 'Calls to prayer', 'Calls at the ancient hours, from dawn to night, with natural sounds like bells and cockcrow. They ring like an alarm until you stop them.'),
     ('🙏', 'Guided prayer', 'Short guided sessions that walk you through praise, confession, thanks and asking.'),
     ('📖', 'The Word every day', 'A Psalm, a Proverb and a Gospel chapter each day, plus a daily verse to share.'),
     ('🪔', 'Keep your lamp burning', 'Your streak, milestones and a calendar of every day you prayed and read.'),
@@ -82,6 +82,7 @@ FEATURES = [
 
 # Newest first. Add a line here with every app update.
 RELEASES = [
+    ('0.7.5', 'November 2026', 'Calls to prayer now ring like an alarm and keep ringing until you stop them.'),
     ('0.7.4', 'November 2026', 'Tap verses to colour them in five colours, copy them, or share them as text or a picture. The app now turns sideways and works on tablets.'),
     ('0.7.2', 'November 2026', 'Listen to Bible chapters and today&rsquo;s word read aloud, with slower and faster speeds. Calls to prayer now play their sound.'),
     ('0.6.0', 'November 2026', 'Ninth Hour arrives on Google Play.'),

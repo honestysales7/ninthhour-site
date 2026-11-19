@@ -75,13 +75,14 @@ FEATURES = [
     ('🪔', 'Keep your lamp burning', 'Your streak, milestones and a calendar of every day you prayed and read.'),
     ('✍️', 'Reflect', 'A daily question and a private journal kept only on your phone.'),
     ('🌅', 'Follows the sun', 'Prayer times move with sunrise and sunset where you live.'),
-    ('🔊', 'Listen to the Word', 'Hear each chapter and today&rsquo;s word read aloud, slower or faster, with the verse lit up as it is read.'),
+    ('🔊', 'Listen to the Word', 'Hear each chapter read aloud by a professional Bible narrator, slower or faster.'),
     ('🖍️', 'Colour and share verses', 'Tap verses to colour them, copy them, or share them as text or a beautiful picture.'),
     ('📱', 'Any screen', 'Works upright or sideways, on phones and tablets.'),
 ]
 
 # Newest first. Add a line here with every app update.
 RELEASES = [
+    ('0.7.6', 'November 2026', 'Bible chapters are now read aloud by Bob Souer, a professional Bible narrator, instead of the phone&rsquo;s voice.'),
     ('0.7.5', 'November 2026', 'Calls to prayer ring three times at full alarm volume, even when your phone is turned down. Verses you tap are now clearly marked before you colour or share them.'),
     ('0.7.4', 'November 2026', 'Tap verses to colour them in five colours, copy them, or share them as text or a picture. The app now turns sideways and works on tablets.'),
     ('0.7.2', 'November 2026', 'Listen to Bible chapters and today&rsquo;s word read aloud, with slower and faster speeds. Calls to prayer now play their sound.'),

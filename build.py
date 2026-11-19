@@ -48,7 +48,10 @@ footer a{color:var(--muted);margin-right:16px}
 """
 
 
+TRUMPET = '<button id="snd" aria-label="Turn welcome trumpet off" title="Welcome trumpet" style="position:fixed;right:14px;bottom:14px;z-index:50;width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.25);background:rgba(11,16,38,.85);color:#E9C46A;font-size:20px;cursor:pointer">&#128264;</button>\n<audio id="trumpet" src="/sound/welcome-trumpet.mp3" preload="auto"></audio>\n<script>(function(){var a=document.getElementById(\'trumpet\'),b=document.getElementById(\'snd\'),off=false,done=false;\ntry{off=localStorage.getItem(\'nh-trumpet\')===\'off\'}catch(e){}\nfunction show(){b.innerHTML=off?\'&#128263;\':\'&#128264;\';b.setAttribute(\'aria-label\',off?\'Turn welcome trumpet on\':\'Turn welcome trumpet off\')}\nfunction play(){if(off||done)return;a.volume=0.8;var p=a.play();if(p&&p.then)p.then(function(){done=true;stop()}).catch(function(){});}\nvar ev=[\'pointerdown\',\'keydown\',\'touchstart\',\'scroll\'];function first(){play()}\nfunction stop(){ev.forEach(function(e){removeEventListener(e,first,true)})}\nev.forEach(function(e){addEventListener(e,first,{capture:true,passive:true})});\nb.addEventListener(\'click\',function(ev2){ev2.stopPropagation();off=!off;try{localStorage.setItem(\'nh-trumpet\',off?\'off\':\'on\')}catch(e){};show();if(off){a.pause();a.currentTime=0}else{done=false;play()}});\nshow();play();})();</script>\n'
+
 def page(title, desc, body, depth=0):
+    trumpet = TRUMPET if depth == 0 else ""
     up = '../' * depth
     return f"""<!DOCTYPE html>
 <html lang="en-GB"><head><meta charset="utf-8">
@@ -65,7 +68,7 @@ def page(title, desc, body, depth=0):
 {body}
 <footer><div class="wrap"><a href="{up}privacy/">Privacy</a><a href="{up}terms/">Terms</a><a href="mailto:sales@honestysales.com">sales@honestysales.com</a>
 <p>&copy; 2026 Honesty Sales Ltd &middot; Company no. 15075596 &middot; PA103 Technology Centre, Glaisher Drive, Wolverhampton WV10 9RU, UK</p></div></footer>
-</body></html>"""
+{trumpet}</body></html>"""
 
 
 FEATURES = [

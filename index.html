@@ -94,4 +94,15 @@ footer a{color:var(--muted);margin-right:16px}
 
 <footer><div class="wrap"><a href="privacy/">Privacy</a><a href="terms/">Terms</a><a href="mailto:sales@honestysales.com">sales@honestysales.com</a>
 <p>&copy; 2026 Honesty Sales Ltd &middot; Company no. 15075596 &middot; PA103 Technology Centre, Glaisher Drive, Wolverhampton WV10 9RU, UK</p></div></footer>
+<button id="snd" aria-label="Turn welcome trumpet off" title="Welcome trumpet" style="position:fixed;right:14px;bottom:14px;z-index:50;width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.25);background:rgba(11,16,38,.85);color:#E9C46A;font-size:20px;cursor:pointer">&#128264;</button>
+<audio id="trumpet" src="/sound/welcome-trumpet.mp3" preload="auto"></audio>
+<script>(function(){var a=document.getElementById('trumpet'),b=document.getElementById('snd'),off=false,done=false;
+try{off=localStorage.getItem('nh-trumpet')==='off'}catch(e){}
+function show(){b.innerHTML=off?'&#128263;':'&#128264;';b.setAttribute('aria-label',off?'Turn welcome trumpet on':'Turn welcome trumpet off')}
+function play(){if(off||done)return;a.volume=0.8;var p=a.play();if(p&&p.then)p.then(function(){done=true;stop()}).catch(function(){});}
+var ev=['pointerdown','keydown','touchstart','scroll'];function first(){play()}
+function stop(){ev.forEach(function(e){removeEventListener(e,first,true)})}
+ev.forEach(function(e){addEventListener(e,first,{capture:true,passive:true})});
+b.addEventListener('click',function(ev2){ev2.stopPropagation();off=!off;try{localStorage.setItem('nh-trumpet',off?'off':'on')}catch(e){};show();if(off){a.pause();a.currentTime=0}else{done=false;play()}});
+show();play();})();</script>
 </body></html>

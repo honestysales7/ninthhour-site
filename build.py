@@ -82,6 +82,7 @@ FEATURES = [
 
 # Newest first. Add a line here with every app update.
 RELEASES = [
+    ('0.7.5', 'November 2026', 'Verses you tap are now clearly marked, and the app shows how many you have picked before you colour or share them.'),
     ('0.7.4', 'November 2026', 'Tap verses to colour them in five colours, copy them, or share them as text or a picture. The app now turns sideways and works on tablets.'),
     ('0.7.2', 'November 2026', 'Listen to Bible chapters and today&rsquo;s word read aloud, with slower and faster speeds. Calls to prayer now play their sound.'),
     ('0.6.0', 'November 2026', 'Ninth Hour arrives on Google Play.'),

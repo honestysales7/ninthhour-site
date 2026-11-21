@@ -81,10 +81,14 @@ FEATURES = [
     ('🔊', 'Listen to the Word', 'Hear each chapter read aloud by a professional Bible narrator, slower or faster.'),
     ('🖍️', 'Colour and share verses', 'Tap verses to colour them, copy them, or share them as text or a beautiful picture.'),
     ('📱', 'Any screen', 'Works upright or sideways, on phones and tablets.'),
+    ('📜', 'The whole Bible', 'All 66 books with section headings, the words of Jesus in red, notes, saved verses, related verses and search.'),
+    ('🇬🇭', 'English and Twi', 'Use the app and read the Bible in English or Asante Twi. More languages are coming.'),
 ]
 
 # Newest first. Add a line here with every app update.
 RELEASES = [
+    ('0.9.0', 'November 2026', 'The whole Bible: all 66 books in English and Twi, with section headings and the words of Jesus in red. Write notes on verses, save verses, follow related verses, search, and carry on where you stopped. Every English chapter can be read aloud.'),
+    ('0.8.0', 'November 2026', 'Ninth Hour now speaks Twi (Asante): choose English or Twi in Settings, with the Twi Bible (Nkwa Asɛm).'),
     ('0.7.6', 'November 2026', 'Bible chapters are now read aloud by Bob Souer, a professional Bible narrator, instead of the phone&rsquo;s voice. Today&rsquo;s chapters are kept on your phone so you can listen offline, and the verse being read is highlighted as you go.'),
     ('0.7.5', 'November 2026', 'Calls to prayer ring three times at full alarm volume, even when your phone is turned down. Verses you tap are now clearly marked before you colour or share them.'),
     ('0.7.4', 'November 2026', 'Tap verses to colour them in five colours, copy them, or share them as text or a picture. The app now turns sideways and works on tablets.'),

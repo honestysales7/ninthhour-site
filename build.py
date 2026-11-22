@@ -87,6 +87,7 @@ FEATURES = [
 
 # Newest first. Add a line here with every app update.
 RELEASES = [
+    ('0.9.2', 'November 2026', 'The complete Twi Bible: every verse is now there, with Twi section headings and Psalm titles, and the words of Jesus in red in Twi. Lists such as the kings in Joshua are easier to read, and a few words that ran together are fixed.'),
     ('0.9.1', 'November 2026', 'Listen to the whole Bible in Twi: every chapter of all 66 books is read aloud in Asante Twi, with each verse lighting up as it is read.'),
     ('0.9.0', 'November 2026', 'The whole Bible: all 66 books in English and Twi, with section headings and the words of Jesus in red. Write notes on verses, save verses, follow related verses, search, and carry on where you stopped. Every English chapter can be read aloud.'),
     ('0.8.0', 'November 2026', 'Ninth Hour now speaks Twi (Asante): choose English or Twi in Settings, with the Twi Bible (Nkwa Asɛm).'),

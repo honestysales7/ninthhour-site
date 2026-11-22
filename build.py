@@ -87,6 +87,7 @@ FEATURES = [
 
 # Newest first. Add a line here with every app update.
 RELEASES = [
+    ('0.9.1', 'November 2026', 'Listen to the whole Bible in Twi: every chapter of all 66 books is read aloud in Asante Twi, with each verse lighting up as it is read.'),
     ('0.9.0', 'November 2026', 'The whole Bible: all 66 books in English and Twi, with section headings and the words of Jesus in red. Write notes on verses, save verses, follow related verses, search, and carry on where you stopped. Every English chapter can be read aloud.'),
     ('0.8.0', 'November 2026', 'Ninth Hour now speaks Twi (Asante): choose English or Twi in Settings, with the Twi Bible (Nkwa Asɛm).'),
     ('0.7.6', 'November 2026', 'Bible chapters are now read aloud by Bob Souer, a professional Bible narrator, instead of the phone&rsquo;s voice. Today&rsquo;s chapters are kept on your phone so you can listen offline, and the verse being read is highlighted as you go.'),

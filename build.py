@@ -87,6 +87,7 @@ FEATURES = [
 
 # Newest first. Add a line here with every app update.
 RELEASES = [
+    ('0.9.6', 'November 2026', 'Ninth Hour now tells you when a new version is ready and updates in the background while you carry on, so you always have the latest.'),
     ('0.9.5', 'November 2026', 'In English, the highlighted verse now follows Bob Souer\u2019s voice as he reads.'),
     ('0.9.4', 'November 2026', 'Today\u2019s word is simpler: read the verse yourself, with a short saying to think on underneath, and share it with one tap.'),
     ('0.9.3', 'November 2026', 'Every word is read by a real human voice: "Listen to today\u2019s word" now opens the verse in the Bible and plays the recorded reading, in English and in Twi.'),

@@ -64,9 +64,9 @@ def page(title, desc, body, depth=0):
 <link rel="icon" href="{up}favicon.png">
 <style>{CSS}</style></head><body>
 <header class="nav"><div class="wrap"><a class="brand" href="{up or './'}"><img src="{up}img/icon.png" alt="">Ninth Hour</a>
-<nav><a class="link" href="{up}#features">Features</a><a class="link" href="{up}#new">What&rsquo;s new</a><a class="link" href="{up}#premium">Premium</a><a class="link" href="mailto:sales@honestysales.com">Contact</a></nav></div></header>
+<nav><a class="link" href="{up}#features">Features</a><a class="link" href="{up}#new">What&rsquo;s new</a><a class="link" href="{up}#premium">Premium</a><a class="link" href="mailto:apps@honestysales.com">Contact</a></nav></div></header>
 {body}
-<footer><div class="wrap"><a href="{up}privacy/">Privacy</a><a href="{up}terms/">Terms</a><a href="mailto:sales@honestysales.com">sales@honestysales.com</a>
+<footer><div class="wrap"><a href="{up}privacy/">Privacy</a><a href="{up}terms/">Terms</a><a href="mailto:apps@honestysales.com">apps@honestysales.com</a>
 <p>&copy; 2026 Honesty Sales Ltd &middot; Company no. 15075596 &middot; PA103 Technology Centre, Glaisher Drive, Wolverhampton WV10 9RU, UK</p></div></footer>
 {trumpet}</body></html>"""
 
